@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DecodeLabs | Frontend Project 1 - Static Webpage Design</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header class="header">
+    <div class="container header__inner">
+      <div class="logo">
+        <div class="logo__icon">◢</div>
+        <span class="logo__text">Decode<span class="logo__highlight">Labs</span></span>
+      </div>
+      <nav class="nav">
+        <a href="#home" class="nav__link">Home</a>
+        <a href="#about" class="nav__link">About</a>
+        <a href="#project" class="nav__link">Project</a>
+        <a href="#standards" class="nav__link">Standards</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="container">
+        <div class="hero__grid">
+          <div class="hero__content">
+            <div class="hero__badge">Project 1 · 2026</div>
+            <h1 class="hero__title">Static Webpage <br>Design Foundation</h1>
+            <p class="hero__description">Semantic HTML · CSS Grid · Flexbox · DRY Principles · Pixel-perfect architecture. The frontend is the only part of the system the world will ever see.</p>
+            <div class="hero__buttons">
+              <a href="#project" class="btn btn--primary">Explore Project</a>
+              <a href="#standards" class="btn btn--outline">View Standards →</a>
+            </div>
+          </div>
+          <div class="hero__image">
+            <img src="https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=600&h=600&fit=crop" alt="Developer workspace with code" width="600" height="600" class="hero__img">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Info Architecture Section -->
+    <section id="about" class="section section--dark">
+      <div class="container">
+        <div class="section__header">
+          <span class="section__tag">Information Architecture</span>
+          <h2 class="section__title">Structure Before Code</h2>
+          <p class="section__subtitle">Organizing content for maximum findability and semantic integrity</p>
+        </div>
+        <div class="features-grid">
+          <div class="feature-card">
+            <div class="feature-card__icon">📐</div>
+            <h3 class="feature-card__title">Grid Layout</h3>
+            <p class="feature-card__desc">Macro page structure with CSS Grid — precise, responsive, and maintainable</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-card__icon">🎯</div>
+            <h3 class="feature-card__title">Flexbox</h3>
+            <p class="feature-card__desc">Micro component alignment for perfect spacing and distribution</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-card__icon">🧩</div>
+            <h3 class="feature-card__title">BEM Methodology</h3>
+            <p class="feature-card__desc">Block-Element-Modifier naming for scalable, DRY CSS architecture</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-card__icon">♿</div>
+            <h3 class="feature-card__title">A11Y Ready</h3>
+            <p class="feature-card__desc">Accessibility standards — perceivable by all users and assistive tech</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- IPO Model Section -->
+    <section class="section">
+      <div class="container">
+        <div class="ipo-grid">
+          <div class="ipo-card ipo-card--input">
+            <div class="ipo-card__label">INPUT</div>
+            <div class="ipo-card__content">
+              <div class="ipo-card__icon">📥</div>
+              <h3>Assets & Data</h3>
+              <p>Images, Icons, Text — all with explicit dimensions preventing CLS</p>
+            </div>
+          </div>
+          <div class="ipo-arrow">→</div>
+          <div class="ipo-card ipo-card--process">
+            <div class="ipo-card__label">PROCESS</div>
+            <div class="ipo-card__content">
+              <div class="ipo-card__icon">⚙️</div>
+              <h3>Box Model & Logic</h3>
+              <p>CSS cascade, Grid/Flexbox systems, BEM naming conventions</p>
+            </div>
+          </div>
+          <div class="ipo-arrow">→</div>
+          <div class="ipo-card ipo-card--output">
+            <div class="ipo-card__label">OUTPUT</div>
+            <div class="ipo-card__content">
+              <div class="ipo-card__icon">🖥️</div>
+              <h3>Pixel-Perfect Render</h3>
+              <p>Clean, responsive layout that passes W3C and Lighthouse audit</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Project Requirements Section -->
+    <section id="project" class="section section--gradient">
+      <div class="container">
+        <div class="project-grid">
+          <div class="project-content">
+            <span class="section__tag">Requirements</span>
+            <h2 class="section__title">Project 1 Specifications</h2>
+            <ul class="requirement-list">
+              <li class="requirement-list__item">✓ Semantic HTML5 — header, main, footer, section, nav</li>
+              <li class="requirement-list__item">✓ Single &lt;h1&gt; with proper heading hierarchy</li>
+              <li class="requirement-list__item">✓ External CSS only — no inline styles</li>
+              <li class="requirement-list__item">✓ DRY Principle + BEM naming convention</li>
+              <li class="requirement-list__item">✓ Grid for macro layout, Flexbox for components</li>
+              <li class="requirement-list__item">✓ Images with explicit width/height attributes</li>
+              <li class="requirement-list__item">✓ Pass W3C Validator & Lighthouse Audit</li>
+            </ul>
+            <div class="tech-stack">
+              <span class="tech-stack__pill">HTML5</span>
+              <span class="tech-stack__pill">CSS3</span>
+              <span class="tech-stack__pill">Grid</span>
+              <span class="tech-stack__pill">Flexbox</span>
+              <span class="tech-stack__pill">BEM</span>
+            </div>
+          </div>
+          <div class="project-image">
+            <img src="https://images.pexels.com/photos/11035539/pexels-photo-11035539.jpeg?auto=compress&cs=tinysrgb&w=500&h=550&fit=crop" alt="Code on screen" width="500" height="550" class="project-img">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Quality Gate Section -->
+    <section id="standards" class="section section--dark">
+      <div class="container">
+        <div class="quality-grid">
+          <div class="quality-card quality-card--gate">
+            <div class="quality-card__badge">⚡ The Quality Gate</div>
+            <h3 class="quality-card__title">Code does not ship until it passes inspection</h3>
+            <p class="quality-card__desc">Every line of code must validate against W3C standards and achieve 90+ Lighthouse scores.</p>
+          </div>
+          <div class="quality-card quality-card--standards">
+            <div class="quality-card__badge">📋 Standards</div>
+            <ul class="standards-list">
+              <li>W3C Validator Pass</li>
+              <li>Lighthouse Performance > 90</li>
+              <li>Zero CLS (Cumulative Layout Shift)</li>
+              <li>Semantic HTML Validation</li>
+              <li>WCAG 2.1 AA Compliance</li>
+            </ul>
+          </div>
+          <div class="quality-card quality-card--metrics">
+            <div class="quality-card__badge">📊 Metrics</div>
+            <div class="metric">
+              <span class="metric__label">Performance</span>
+              <div class="metric__bar"><div class="metric__fill" style="width: 96%"></div></div>
+              <span class="metric__value">96%</span>
+            </div>
+            <div class="metric">
+              <span class="metric__label">Accessibility</span>
+              <div class="metric__bar"><div class="metric__fill" style="width: 100%"></div></div>
+              <span class="metric__value">100%</span>
+            </div>
+            <div class="metric">
+              <span class="metric__label">Best Practices</span>
+              <div class="metric__bar"><div class="metric__fill" style="width: 92%"></div></div>
+              <span class="metric__value">92%</span>
+            </div>
+            <div class="metric">
+              <span class="metric__label">SEO</span>
+              <div class="metric__bar"><div class="metric__fill" style="width: 94%"></div></div>
+              <span class="metric__value">94%</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Quote Section -->
+    <section class="quote">
+      <div class="container">
+        <div class="quote__content">
+          <div class="quote__mark">"</div>
+          <p class="quote__text">Build it well, for the frontend is the only part of the system the world will ever see.</p>
+          <div class="quote__author">— DECODELABS ENGINEERING FOUNDATIONS</div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <div class="logo">
+            <div class="logo__icon">◢</div>
+            <span class="logo__text">Decode<span class="logo__highlight">Labs</span></span>
+          </div>
+          <p class="footer__desc">Building the foundation of visual architecture & technical integrity since 2026.</p>
+        </div>
+        <div class="footer__contact">
+          <h4>Contact</h4>
+          <p>📞 +91 89330 06408</p>
+          <p>✉️ decodelabs.tech@gmail.com</p>
+          <p>🌐 www.decodelabs.tech</p>
+        </div>
+        <div class="footer__location">
+          <h4>Location</h4>
+          <p>📍 Greater Lucknow, India</p>
+        </div>
+      </div>
+      <div class="footer__copyright">
+        <p>© 2026 DecodeLabs — Frontend Project 1: Static Webpage Design. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
